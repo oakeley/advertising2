@@ -14,8 +14,8 @@ This repository contains a collection of tools and scripts for optimizing digita
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/digital-ad-optimization.git
-cd digital-ad-optimization
+git clone https://github.com/oakeley/advertising2.git
+cd advertising2
 
 # Create and activate the conda environment
 conda env create -f ad_optimization_environment.yml
