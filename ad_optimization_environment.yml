@@ -1,0 +1,24 @@
+name: torch_rl_ad_optimization
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9  # Downgraded from 3.10 for better compatibility with TorchRL
+  - pip=23.0.1
+  - numpy=1.23.5  # Fixed version to avoid potential conflicts with older PyTorch
+  - pandas=2.0.1
+  - matplotlib=3.7.1
+  - seaborn=0.12.2
+  - pytorch=2.0.1  # Specific version known to work with torchrl 0.2.0
+  - torchvision=0.15.2  # Matching version for PyTorch 2.0.1
+  - torchaudio=2.0.2  # Matching version for PyTorch 2.0.1
+  - pytorch-cuda=11.8  # More widely supported CUDA version than 12.1
+  - pip:
+    - torchrl==0.2.0  # Matches the import in the code
+    - tensordict==0.2.0  # Ensures compatibility with torchrl 0.2.0
+    - gymnasium==0.28.1
+    - optuna==3.3.0
+    - tensorboard==2.13.0
+    - tqdm==4.65.0
