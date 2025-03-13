@@ -21,6 +21,8 @@ cd advertising2
 # Create and activate the conda environment
 conda env create -f ad_optimization_environment.yml
 conda activate torch_rl_ad_optimization
+# For GPUs you need to install the GPU version of PyTorch separately
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 ```
 
 ## Usage
